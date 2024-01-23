@@ -17,10 +17,10 @@ public class Function
     /// <returns></returns>
     public string FunctionHandler(BloodPressureModel input, ILambdaContext context)
     {
-        string server = "database-1-test2-free.cmxaysr3jegu.eu-west-1.rds.amazonaws.com";
-        string database = "test";
-        string username = "admin";
-        string? password = Environment.GetEnvironmentVariable("DB_Password");
+        string server = "";
+        string database = "";
+        string username = "";
+        string? password = Environment.GetEnvironmentVariable("");
         Console.WriteLine(password);
         string connectionString = String.Format("server={0};database={1};user={2};password={3}", server, database, username, password);
         try
